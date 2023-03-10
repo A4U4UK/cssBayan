@@ -1,0 +1,22 @@
+body{
+    background-color: blanchedalmond;
+}
+.accordion{
+    text-align: center;
+}
+.accordion-element-box{
+    background-color:rgb(159, 116, 116);
+    border-radius: 15px;
+    height: 80%;
+    width: 50%;
+}
+img{
+    height: 400px;
+    width: 400px;
+}
+.accordion-memebox{
+    margin: 10px;
+}
+.accordion-element{
+    list-style: none;
+}
