@@ -1,22 +1,61 @@
 body{
     background-color: blanchedalmond;
 }
+p{
+    margin: 0;
+    font-weight: bold;
+    font-size: xx-large;
+}
 .accordion{
     text-align: center;
 }
 .accordion-element-box{
     background-color:rgb(159, 116, 116);
-    border-radius: 15px;
-    height: 80%;
-    width: 50%;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0;
 }
 img{
-    height: 400px;
-    width: 400px;
-}
-.accordion-memebox{
-    margin: 10px;
+    height: 0%;
+    width: 0%;
+    transition: 0.3s;
 }
 .accordion-element{
     list-style: none;
+}
+.accordion-element-block{
+    cursor: pointer;
+}
+
+.accordion-element-box:hover ~ .accardion-img img{
+    width: 40%;
+    height: 40%;
+}
+.accardion-img:hover img{
+    width: 40%;
+    height: 40%;
+}
+.accordion-element-block:hover i {
+    --fa-rotate-angle: 90deg;
+}
+
+.accordion-cont{
+    width: 1140px;
+    margin: 0 auto;
+}
+.accardion-img{
+    display: block;
+    width: 100%;
+}
+input{
+    display: none;
+}
+.into-mem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+i{
+    font-size: 35px;
 }
