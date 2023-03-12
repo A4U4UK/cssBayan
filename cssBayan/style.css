@@ -1,13 +1,22 @@
 body{
-    background-color: blanchedalmond;
+    background-color: rgb(125, 114, 97);
 }
 p{
     margin: 0;
     font-weight: bold;
     font-size: xx-large;
 }
+h1{
+    background-color:rgb(95, 129, 143);
+    color: #ffc2c2;
+    padding: 1%;
+    border-radius: 6px;
+}
 .accordion{
     text-align: center;
+    background-color:rgb(221, 221, 221);
+    padding: 2%;
+    border-radius: 6px;
 }
 .accordion-element-box{
     background-color:rgb(159, 116, 116);
@@ -22,9 +31,11 @@ img{
 }
 .accordion-element{
     list-style: none;
-}
-.accordion-element-block{
     cursor: pointer;
+    padding: 0;
+}
+input{
+    display: none;
 }
 
 .accordion-element-box:hover ~ .accardion-img img{
@@ -35,9 +46,27 @@ img{
     width: 40%;
     height: 40%;
 }
+.accordion-element-block:has(input[type=radio]:checked) img {
+    width: 40%;
+    height: 40%;
+}
 .accordion-element-block:hover i {
     --fa-rotate-angle: 90deg;
+    color: #c9fd7c;
 }
+.accordion-element-block:has(input[type=radio]:checked) i {
+    --fa-rotate-angle: 90deg;
+    color: #c9fd7c;
+}
+.accordion-element-block:has(input[type=radio]:checked) p {
+    color: #e7ff7e;
+}
+.accordion-element-block:hover p {
+    color: #e7ff7e;
+}
+
+
+
 
 .accordion-cont{
     width: 1140px;
@@ -47,9 +76,7 @@ img{
     display: block;
     width: 100%;
 }
-input{
-    display: none;
-}
+
 .into-mem{
     display: flex;
     justify-content: space-between;
@@ -58,4 +85,7 @@ input{
 }
 i{
     font-size: 35px;
+}
+label{
+    cursor: pointer;
 }
