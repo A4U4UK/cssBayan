@@ -43,15 +43,15 @@ input{
 
 
 .accordion-element-box:hover ~ .accardion-img img{
-    width: 40%;
+    width: 42%;
     height: 40%;
 }
 .accardion-img:hover img{
-    width: 40%;
+    width: 42%;
     height: 40%;
 }
 .accordion-element-block:has(input[type=radio]:checked) img {
-    width: 40%;
+    width: 42%;
     height: 40%;
 }
 .accordion-element-block:hover i {
